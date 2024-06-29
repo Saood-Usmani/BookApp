@@ -1,14 +1,24 @@
+import '@fortawesome/fontawesome-free/css/all.css';
+
 export default function Sidebar() {
   return (
-    <div className="bg-orange-200 w-64 h-screen p-4">
-      <h1 className="text-2xl font-bold mb-4">All journals</h1>
-      <div className="mb-4">
+    <div className="bg-[#1C2A33] w-96 h-screen text-white">
+      <div className="bg-gradient-to-r from-[#F7C22A] to-[#F1D585] p-4 text-black">
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold font-jacques">All journals</h1>
+        <i className="fas fa-chevron-down ml-2"></i>
+      </div>
+    </div>
+      <div className='flex items-center'>
+      <div className="border rounded-[30px] bg-white flex items-center justify-between">
         <input
           type="text"
           placeholder="Search journals..."
-          className="w-full p-2 rounded border"
+          className="focus:outline-none focus:ring-2 focus:ring-indigo-500 mx-4"
         />
-        
+        <i className="fas fa-search fa-sm text-black mx-2"></i>
+      </div>
+      <i className="fas fa-cog"></i>
       </div>
       <div className="mb-4">
         <h2 className="font-semibold mb-2">View</h2>
